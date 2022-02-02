@@ -47,7 +47,7 @@ public class Driver {
 		}
 		return driver;
 	}
-
+     // me tyong hwsBDLNVN	KQL;DVBJK	QEFB
 	public static void quitDriver() {
 		if (driver != null) {
 			driver.quit();
