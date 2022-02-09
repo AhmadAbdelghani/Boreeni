@@ -18,14 +18,17 @@ public class TradeJournalHomePage {
 	
 	
 	
-	@FindBy (xpath = "(//a[@class=‘nav-link’])[1]")
-	public WebElement pageHeader;
+	@FindBy (xpath  = "//a[text()='Home ']")
+	public WebElement pageTitle;
 	
-	@FindBy (xpath = "(//a[@class=‘nav-link’])[2]")
+	@FindBy (xpath = "//a[contains(text(), 'Finom')]")
 	public WebElement finomGroup;
 	
-	@FindBy (xpath = "(//a[@class=‘nav-link’])[3]")
+	@FindBy (linkText  = "Slack Channel")
 	public WebElement slackChannel;
+	
+	@FindBy (xpath = "//span[text()='PrimeTech_SDET_Batch1']")
+	public WebElement batch1SlackChannel;
 	
 	@FindBy (css = "#navbarDropdown")
 	public  WebElement toolDropDown;
